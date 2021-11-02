@@ -47,6 +47,8 @@
     <modules>
         <module>abstract-document</module>
         <module>abstract-factory</module>
+        <module>acyclic-visitor</module>
+        <module>adapter</module>
     </modules>
 
     <dependencyManagement>
