@@ -21,12 +21,28 @@
  * THE SOFTWARE.
  */
 
-package org.example.abstractfactory;
+package org.example.callback;
+
+import static org.slf4j.LoggerFactory.getLogger;
+
+import org.slf4j.Logger;
 
 /**
- * Army interface.
+ * This example generates the exact same output as {@link App} however the callback has been defined
+ * as a Lambdas expression.
  */
-public interface Army {
+public final class LambdasApp {
 
-    String getDescription();
+  private static final Logger LOGGER = getLogger(LambdasApp.class);
+
+  private LambdasApp() {
+  }
+
+  /**
+   * Program entry point.
+   */
+  public static void main(final String[] args) {
+    var task = new SimpleTask();
+    task.executeWith(() -> LOGGER.info("I'm done now."));
+  }
 }

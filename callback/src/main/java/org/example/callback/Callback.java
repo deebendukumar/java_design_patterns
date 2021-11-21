@@ -21,12 +21,12 @@
  * THE SOFTWARE.
  */
 
-package org.example.abstractfactory;
+package org.example.callback;
 
 /**
- * Army interface.
+ * Callback interface.
  */
-public interface Army {
+public interface Callback {
 
-    String getDescription();
+  void call();
 }

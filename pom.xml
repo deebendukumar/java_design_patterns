@@ -51,6 +51,8 @@
         <module>adapter</module>
         <module>bridge</module>
         <module>builder</module>
+        <module>caching</module>
+        <module>callback</module>
     </modules>
 
     <dependencyManagement>

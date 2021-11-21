@@ -29,8 +29,8 @@ import org.junit.jupiter.api.Test;
  * Tests that Adapter example runs without errors.
  */
 public class AppTest {
-  @Test
-  public void test() {
-    App.main(new String[]{});
-  }
+    @Test
+    public void test() {
+        App.main(new String[]{});
+    }
 }

@@ -21,12 +21,16 @@
  * THE SOFTWARE.
  */
 
-package org.example.abstractfactory;
+package org.example.callback;
+
+import org.junit.jupiter.api.Test;
 
 /**
- * Army interface.
+ * Tests that Callback example runs without errors.
  */
-public interface Army {
-
-    String getDescription();
+public class AppTest {
+  @Test
+  public void test() {
+    App.main(new String[]{});
+  }
 }

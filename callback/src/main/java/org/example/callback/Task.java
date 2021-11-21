@@ -21,12 +21,22 @@
  * THE SOFTWARE.
  */
 
-package org.example.abstractfactory;
+package org.example.callback;
+
+import java.util.Optional;
 
 /**
- * Army interface.
+ * Template-method class for callback hook execution.
  */
-public interface Army {
+public abstract class Task {
 
-    String getDescription();
+  /**
+   * Execute with callback.
+   */
+  final void executeWith(final Callback callback) {
+    execute();
+    Optional.ofNullable(callback).ifPresent(Callback::call);
+  }
+
+  public abstract void execute();
 }

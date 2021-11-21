@@ -21,12 +21,22 @@
  * THE SOFTWARE.
  */
 
-package org.example.abstractfactory;
+package org.example.callback;
+
+import static org.slf4j.LoggerFactory.getLogger;
+
+import org.slf4j.Logger;
 
 /**
- * Army interface.
+ * Implementation of task that need to be executed.
  */
-public interface Army {
+public final class SimpleTask extends Task {
 
-    String getDescription();
+  private static final Logger LOGGER = getLogger(SimpleTask.class);
+
+  @Override
+  public void execute() {
+    LOGGER.info("Perform some important activity and after call the"
+        + " callback method.");
+  }
 }

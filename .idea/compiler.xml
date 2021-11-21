@@ -6,10 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="adapter" />
         <module name="builder" />
         <module name="acyclic-visitor" />
-        <module name="adapter" />
+        <module name="callback" />
         <module name="bridge" />
+        <module name="caching" />
         <module name="abstract-document" />
         <module name="abstract-factory" />
       </profile>
@@ -24,8 +26,6 @@
       <module name="balking" target="11" />
       <module name="business-delegate" target="11" />
       <module name="bytecode" target="11" />
-      <module name="caching" target="11" />
-      <module name="callback" target="11" />
       <module name="chain" target="11" />
       <module name="circuit-breaker" target="11" />
       <module name="collection-pipeline" target="11" />

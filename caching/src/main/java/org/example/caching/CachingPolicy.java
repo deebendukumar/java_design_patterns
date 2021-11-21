@@ -21,12 +21,21 @@
  * THE SOFTWARE.
  */
 
-package org.example.abstractfactory;
+package org.example.caching;
 
 /**
- * Army interface.
+ * Enum class containing the four caching strategies implemented in the pattern.
  */
-public interface Army {
+public enum CachingPolicy {
+  THROUGH("through"), AROUND("around"), BEHIND("behind"), ASIDE("aside");
 
-    String getDescription();
+  private String policy;
+
+  CachingPolicy(String policy) {
+    this.policy = policy;
+  }
+
+  public String getPolicy() {
+    return policy;
+  }
 }

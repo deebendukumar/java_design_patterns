@@ -21,12 +21,29 @@
  * THE SOFTWARE.
  */
 
-package org.example.abstractfactory;
+package org.example.callback;
+
+import static org.slf4j.LoggerFactory.getLogger;
+
+import org.slf4j.Logger;
 
 /**
- * Army interface.
+ * Callback pattern is more native for functional languages where functions are treated as
+ * first-class citizens. Prior to Java 8 callbacks can be simulated using simple (alike command)
+ * interfaces.
  */
-public interface Army {
+public final class App {
 
-    String getDescription();
+  private static final Logger LOGGER = getLogger(App.class);
+
+  private App() {
+  }
+
+  /**
+   * Program entry point.
+   */
+  public static void main(final String[] args) {
+    var task = new SimpleTask();
+    task.executeWith(() -> LOGGER.info("I'm done now."));
+  }
 }

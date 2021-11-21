@@ -21,12 +21,16 @@
  * THE SOFTWARE.
  */
 
-package org.example.abstractfactory;
+package org.example.caching.constants;
 
 /**
- * Army interface.
+ * Constant class for defining constants.
  */
-public interface Army {
+public class CachingConstants {
 
-    String getDescription();
+  public static final String USER_ACCOUNT = "user_accounts";
+  public static final String USER_ID = "userID";
+  public static final String USER_NAME = "userName";
+  public static final String ADD_INFO = "additionalInfo";
+
 }
